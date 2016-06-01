@@ -2,13 +2,13 @@
 
 function double_to_one(collection) 
 {
-  var arr=[1, [2], [3, 4],[5,6,7,8]];
+ // var arr=[1, [2], [3, 4],[5,6,7,8]];
 	var newarr=[];
-	for(var i=0; i<arr.length; i++)
+	for(var i=0; i<collection.length; i++)
 	{
-		for(var j=0; j< arr[i].length; j++)
+		for(var j=0; j< collection[i].length; j++)
 		{
-			newarr.push(newarr[i][j]);  //将二维数组变成一维数组
+			newarr.push(collection[i][j]);  //将二维数组变成一维数组
 		}
 	}
 }
