@@ -7,7 +7,7 @@ function double_to_one(collection)
   var  newarr=[];
   for(var i=0; i<collection.length; i++)
   {
-	    for(var j=0; j< arr[i].length; j++)
+	    for(var j=0; j< collection[i].length; j++)
       {
         	newarr.push(collection[i][j]);
       }
