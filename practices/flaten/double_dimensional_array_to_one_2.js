@@ -22,7 +22,7 @@ function double_to_one(collection)
 		
 	for(var m=0; m<newarr.length; m++)
 	{
-		for(n= m+1; n < newarr.length; n++)
+		for(var n= m+1; n < newarr.length; n++)
 		{
 			if(newarr[m] == newarr[n])
 				{
