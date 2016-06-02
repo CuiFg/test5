@@ -2,28 +2,35 @@
 
 function double_to_one(collection) 
 {
- // var arr=[1, [2], [3, 4],[5,6,7,8]];
-	var newarr=[];
-	for(var i=0; i<collection.length; i++)
+ var newarr=[];
+	for(var i=0; i<arr.length; i++)
 	{
-		for(var j=0; j< collection[i].length; j++)
+		if(arr[i].length ==undefined)
 		{
-			newarr.push(collection[i][j]);  //将二维数组变成一维数组
+			newarr.push(arr[i]);
+		}
+		else 
+		{
+			for(var j=0; j< arr[i].length; j++)
+			{
+				newarr.push(arr[i][j]); //将二维数组变成一维数组
+			}
+			
 		}
 	}
-}
-
-for(var i=0; i<newarr.length; i++)
+//	document.write(arr+"<br>");
+		
+	for(var i=0; i<newarr.length; i++)
 	{
-		for(j= i+1; j < newarr.length; j++)
+		for(j= i+1; j < newarr.length-i; j++)
 		{
-			if(newarr[i] == newarr[j]) //将一维数组中重复元素删去
+			if(newarr[i] == newarr[j])
 				{
-					newarr.splice(j);//此方法会改变原始数组，我要的就是这个结果
+					newarr.splice(j,1);//此方法会改变原始数组，我要的就是这个结果
 				}	
+				
 		}	
 	}	
-	
+//	document.write(newarr);
 	return newarr;
-
 module.exports = double_to_one;
