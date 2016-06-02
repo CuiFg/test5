@@ -20,13 +20,13 @@ function double_to_one(collection)
 	}
 //	document.write(arr+"<br>");
 		
-	for(var m=0; m<newarr.length; m++)
+	for(var i=0; i<newarr.length; i++)
 	{
-		for(var n= m+1; n < newarr.length; n++)
+		for(var j= i+1; j < newarr.length; j++)
 		{
-			if(newarr[m] == newarr[n])
+			if(newarr[i] == newarr[j])
 				{
-					newarr.splice(n,1);//此方法会改变原始数组，我要的就是这个结果
+					newarr.splice(j,1);//此方法会改变原始数组，我要的就是这个结果
 				}	
 				
 		}	
