@@ -33,4 +33,5 @@ function double_to_one(collection)
 	}	
 //	document.write(newarr);
 	return newarr;
+}
 module.exports = double_to_one;
