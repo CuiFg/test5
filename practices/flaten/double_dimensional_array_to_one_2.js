@@ -3,17 +3,17 @@
 function double_to_one(collection) 
 {
  var newarr=[];
-	for(var i=0; i<arr.length; i++)
+	for(var i=0; i<collection.length; i++)
 	{
-		if(arr[i].length ==undefined)
+		if(collection[i].length ==undefined)
 		{
-			newarr.push(arr[i]);
+			newarr.push(collection[i]);
 		}
 		else 
 		{
-			for(var j=0; j< arr[i].length; j++)
+			for(var j=0; j< collection[i].length; j++)
 			{
-				newarr.push(arr[i][j]); //将二维数组变成一维数组
+				newarr.push(collection[i][j]); //将二维数组变成一维数组
 			}
 			
 		}
