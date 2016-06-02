@@ -2,7 +2,7 @@
 
 function double_to_one(collection) 
 {
- var newarr=[];
+  var newarr=[];
 	for(var i=0; i<collection.length; i++)
 	{
 		if(collection[i].length ==undefined)
@@ -20,13 +20,13 @@ function double_to_one(collection)
 	}
 //	document.write(arr+"<br>");
 		
-	for(var i=0; i<newarr.length; i++)
+	for(var m=0; m<newarr.length; m++)
 	{
-		for(j= i+1; j < newarr.length-i; j++)
+		for(n= m+1; n < newarr.length; n++)
 		{
-			if(newarr[i] == newarr[j])
+			if(newarr[m] == newarr[n])
 				{
-					newarr.splice(j,1);//此方法会改变原始数组，我要的就是这个结果
+					newarr.splice(n,1);//此方法会改变原始数组，我要的就是这个结果
 				}	
 				
 		}	
